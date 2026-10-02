@@ -1,0 +1,9 @@
+numero = int(input("Ingrese un número entero: "))
+
+if numero < 10 or numero > 50:
+    print("Número fuera del rango")
+else:
+    if numero == 30:
+        print("Ganaste un premio")
+    else:
+        print("Perdiste")
