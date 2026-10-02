@@ -1,0 +1,5 @@
+numero = int(input("numero:"))
+if numero > 0:
+    print(numero)
+elif numero < 0:
+    print(numero * (-1))
