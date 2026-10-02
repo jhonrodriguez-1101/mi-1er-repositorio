@@ -1,0 +1,9 @@
+Dias_De_La_Semana = input("Ingrese el día de la semana: ")
+if Dias_De_La_Semana == "Lunes":
+    print("Estamos_iniciando_la_semana")
+elif Dias_De_La_Semana == "Viernes":
+    print("Ya_casi")
+elif Dias_De_La_Semana == "Sabado" or Dias_De_La_Semana == "Domingo":
+     print("Fin_de_semana")
+else:
+    print("Dia_entre_semana")
