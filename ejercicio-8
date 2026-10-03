@@ -1,0 +1,15 @@
+"""
+Votaciones
+"""
+Candidato_1 = print("Candidato A, partido rojo")
+Candidato_2 = print("Candidato B, partido verde")
+Candidato_3 = print("Candidato C, partido azul")
+Voto = input("Ingrese su voto: ")
+if Voto == "Candidato A":
+    print("Usted ha votado por el Candidato A, partido rojo")
+if Voto == "Candidato B":
+    print("Usted ha votado por el Candidato B, partido verde")
+if Voto == "Candidato C":
+    print("Usted ha votado por el Candidato C, partido azul")
+else:
+    print("Voto nulo")
