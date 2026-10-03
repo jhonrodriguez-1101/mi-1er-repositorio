@@ -1,0 +1,5 @@
+letra_abecedario = input("Ingrese una letra: ")[0]
+if letra_abecedario in "aeiouAEIOU":
+    print("La letra es una vocal")
+else: 
+    print("La letra es una consonante")
