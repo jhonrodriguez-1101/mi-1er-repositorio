@@ -1,0 +1,35 @@
+fecha = input("Ingrese la fecha dia/ DD / MM: ")
+partes = fecha.split ("/")
+dia = partes[0]
+dd = partes[1]
+mm = partes[2]
+lista = ["Lunes","LUNES", "Martes","MARTES", "Miercoles","MIERCOLES", "Jueves","JUEVES", "Viernes","VIERNES",]
+if dia not in lista:
+    print("se proddujo un error")
+DD = int(dd)
+if DD < 1 or DD > 31:
+    print("se produjo un error")
+MM = int(mm)
+MM = int(mm) < 12 and int(mm) > 0
+if MM < 0 or MM > 12:
+    print("se produjo un error")
+if dia in ["Lunes","LUNES", "Martes","MARTES", "Miercoles","MIERCOLES"]:
+    examen = input("¿Se tomaron examenes? (Si/No): ")
+    if examen == "Si":
+        alumnos_aprobaron = int(input("Ingrese la cantidad de alumnos que aprobaron: "))
+        alumnos_reprobaron = int(input("Ingrese la cantidad de alumnos que reprobaron: "))
+        cuantos_alumnos_aprobaron = (alumnos_aprobaron / (alumnos_reprobaron + alumnos_aprobaron)) * 100
+        print("El porcentaje de alumnos que aprobaron es: ", cuantos_alumnos_aprobaron, "%")
+if dia in ["Jueves","JUEVES"]:
+    asistencia = int(input("Porcentaje de asistencia: "))
+    if asistencia > 50:
+        print("Asistio la mayoria de los alumnos")
+    else: 
+        print("No asistio la mayoria de los alumnos")
+if dia in ["Viernes","VIERNES"]:
+    if dia == "Viernes" and int(dd) == 1 and (int(mm) == 1 or int(mm) == 7):
+        print("Comienzo de nuevo ciclo")
+        cantidad_alumnos_nuevo_ciclo = int(input("Ingrese la cantidad de alumnos nuevo ciclo: "))
+        arancel = int(input("Ingrese el arancel:$ "))
+        ingreso_total = cantidad_alumnos_nuevo_ciclo * arancel
+        print("El ingreso total es: $", ingreso_total)
