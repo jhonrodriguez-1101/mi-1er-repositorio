@@ -1,3 +1,4 @@
+
 total_acumulado = 0.0
 precio_base = 1.90
 pedido_helado = input("¿Deseas pedir un helado? (SI o NO)")
