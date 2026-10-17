@@ -24,5 +24,5 @@ while pedido == "SI":
 else:
     print("Gracias por su visita")
 if Acumulado_pedido > 0:
-    print("Tienes que paggar: $",Acumulado_pedido)
+    print("Tienes que pagar: $",Acumulado_pedido)
 
