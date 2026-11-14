@@ -20,6 +20,10 @@ def potencia(base,exponente):
         veces -= 1
     return resultado
 def raiz_cuadrada(numero):
+    if numero == 0:
+        return 0
+    if numero == 1:
+        return 1
     if numero < 0:
         return "Error"
     base = numero
@@ -28,6 +32,7 @@ def raiz_cuadrada(numero):
             return base
     if multiplicacion(base,base) != numero:
         return "No tiene raiz cuadrada exacta"
+    
 def factorial(numero):
     if numero == 0:
         return 1
@@ -44,23 +49,23 @@ print("Que quieres hacer?: SUMAR, RESTAR, MULTIPLICAR, DIVIDIR, POTENCIA, RAIZ C
 operacion = input("Ingrese la operacion que desea realizar: ")
 operacion = operacion.upper()
 if operacion == "SUMAR":
-    a = int(input("Ingrese el primer numero: "))
-    b = int(input("Ingrese el segundo numero: "))
+    a = float(input("Ingrese el primer numero: "))
+    b = float(input("Ingrese el segundo numero: "))
     print(suma(a,b))
 elif operacion == "RESTAR":
-    a = int(input("Ingrese el primer numero: "))
-    b = int(input("Ingrese el segundo numero: "))
+    a = float(input("Ingrese el primer numero: "))
+    b = float(input("Ingrese el segundo numero: "))
     print(resta(a,b))
 elif operacion == "MULTIPLICAR":
-    a = int(input("Ingrese el primer numero: "))
-    b = int(input("Ingrese el segundo numero: "))
+    a = float(input("Ingrese el primer numero: "))
+    b = float(input("Ingrese el segundo numero: "))
     print(multiplicacion(a,b))
 elif operacion == "DIVIDIR":
-    a = int(input("Ingrese el primer numero: "))
-    b = int(input("Ingrese el segundo numero: "))
+    a = float(input("Ingrese el primer numero: "))
+    b = float(input("Ingrese el segundo numero: "))
     print(division(a,b))
 elif operacion == "POTENCIA":
-    base = int(input("Ingrese la base: "))
+    base = float(input("Ingrese la base: "))
     exponente = int(input("Ingrese el exponente: "))
     print(potencia(base,exponente))
 elif operacion == "RAIZ CUADRADA":
@@ -70,7 +75,7 @@ elif operacion == "FACTORIAL":
     numero = int(input("Ingrese el numero: "))
     print(factorial(numero))
 elif operacion == "INVERSA":
-    numero = int(input("Ingrese el numero: "))
+    numero = float(input("Ingrese el numero: "))
     print(inversa(numero))
 
 
